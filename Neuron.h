@@ -10,9 +10,8 @@ typedef enum {
 typedef struct{
     float input;
     float output;
-    ActivationFunction func;
 } Neuron;
 
-Neuron* neuronCreate(Neuron n);
+Neuron* neuronCreate(Neuron* n);
 
 #endif
