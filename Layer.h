@@ -10,7 +10,7 @@ typedef struct
     Neuron neurons[];
 } Layer;
 
-void layerInit(Layer* l);
+Layer* layerCreate(Layer* l, int neuronCount, ActivationFunction func);
 
 
 #endif

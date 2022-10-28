@@ -9,6 +9,8 @@ typedef struct
     Layer layers[];
 } Network;
 
+Network* networkCreate(Network* n, int layerCount, Layer layers[]);
+
 void networkStart(Network* n);
 
 #endif

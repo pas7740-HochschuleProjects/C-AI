@@ -1,8 +1,6 @@
 #ifndef NEURON_H_INCLUDED
 #define NEURON_H_INCLUDED
 
-#include "Layer.h"
-
 typedef enum {
     Relu = 0,
     Sigmoid = 1,
@@ -14,5 +12,7 @@ typedef struct{
     float output;
     ActivationFunction func;
 } Neuron;
+
+Neuron* neuronCreate(Neuron n);
 
 #endif

@@ -1,10 +1,16 @@
+#include <stdlib.h>
 #include "Layer.h"
+#include "Neuron.h"
 
-void layerInit(Layer* l){
-    for(int i = 0; i < l->neuronCount; i++){
-        Neuron n;
-        n.input = 1.0;
-        n.func = l->func;
-        l->neurons[i] = n;
+Layer* layerCreate(Layer* l, int neuronCount, ActivationFunction func){
+    l = (Layer*) malloc(sizeof(Layer*)+sizeof(Neuron*)*neuronCount);
+    l->neuronCount = neuronCount;
+    l->func = func;
+
+    //Create Neurons
+    for(int i = 0; i < neuronCount; i++){
+        l->neurons[0] = *neuronCreate(l->neurons[0]);
     }
+
+    return l;
 }
