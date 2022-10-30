@@ -1,4 +1,4 @@
-#include "Network.h"
+#include "components/Network.h"
 
 int main(){
     //Init Input/Output

@@ -1,5 +1,5 @@
 #include "math.h"
-#include "AIMath.h"
+#include "ActivationFunctions.h"
 
 float linearFunc(float input){
      return input;

@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "Layer.h"
 #include "Neuron.h"
-#include "AIMath.h"
+#include "../math/ActivationFunctions.h"
 
 Layer* layerCreate(Layer* l, float bias, int neuronCount, ActivationFunction func){
     l = (Layer*) malloc(sizeof(Layer*)+sizeof(Neuron*)*neuronCount);

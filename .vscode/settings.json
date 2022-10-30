@@ -1,7 +1,3 @@
 {
-    "editor.tabSize": 5,
-    "files.associations": {
-        "neuron.h": "c",
-        "stdlib.h": "c"
-    }
+    "editor.tabSize": 5
 }
