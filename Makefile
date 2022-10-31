@@ -1,2 +1,2 @@
-ki: main.c components/Network.c components/Layer.c components/Neuron.c math/ActivationFunctions.c
-	gcc -o ki main.c components/Network.c components/Layer.c components/Neuron.c math/ActivationFunctions.c
+ki: main.c components/Network.c components/Layer.c components/Neuron.c math/ActivationFunctions.c standard/Arrays.c
+	gcc -o ki main.c components/Network.c components/Layer.c components/Neuron.c math/ActivationFunctions.c standard/Arrays.c
