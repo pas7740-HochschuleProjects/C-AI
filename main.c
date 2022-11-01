@@ -1,4 +1,6 @@
 #include "components/Network.h"
+#include "standard/Arrays.h"
+#include "stdio.h"
 
 int main(){
     //Init Input/Output
@@ -13,5 +15,9 @@ int main(){
     Network n = *networkCreate(&n, 3, layers);
 
     networkTrain(&n, 2, 2, 1, x, y);
+
+    int s[] = {1,2,3};
+
+    printf("%i", getArrayLength(s));
     return 0;
 }
